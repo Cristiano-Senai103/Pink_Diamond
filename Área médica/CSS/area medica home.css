@@ -1,0 +1,492 @@
+*
+
+/*GERAL Pagina Área Médica*/
+    {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profissional {
+    position: absolute;
+    width: 190px;
+    height: 40px;
+    left: 275px;
+    top: 20px;
+
+    font-family: 'Alike Angular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+
+    color: rgba(242, 201, 228, 0.58);
+}
+
+.perfil
+
+/*HEADER-Perfil*/
+    {
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #FFC0CB;
+    margin: 13px;
+    cursor: point
+}
+
+.logo
+
+/*HEADER-Logo*/
+    {
+    width: 13%;
+
+}
+
+nav
+
+/*HEADER-Nav Botões Início */
+    {
+    background-color: #fff;
+    box-shadow: 0 0 15px #afafaf;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+nav,
+ul
+
+/*HEADER-GERAL Lista Botões Início*/
+    {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+
+li {
+    padding: 0 5px;
+}
+
+:root
+
+/*VARIAVEIS-BTN*/
+    {
+    --cor-hover-btn: #fdeaed;
+    --cor-secundaria-btn: #FFC0CB;
+}
+
+.btn
+
+/*BTN-CONFIG GERAL*/
+    {
+    background-color: transparent;
+    color: #FFC0CB;
+    border: none;
+    cursor: pointer;
+    transition: background .2s;
+    font-size: 16px;
+    height: 77px;
+    width: 110px;
+}
+
+.btn-inicio
+
+/*BTN-INICIO*/
+    {
+    outline: none;
+
+}
+
+.btn-inicio:hover {
+    background-color: var(--cor-hover-btn);
+}
+
+.btn-inicio:active {
+    color: #ffff;
+    background-color: var(--cor-secundaria-btn);
+}
+
+.btn-sair
+
+/*BTN-AGENDAMENTO*/
+    {
+    outline: none;
+}
+
+.btn-sair:hover {
+    background-color: var(--cor-hover-btn);
+}
+
+.btn-sair:active {
+    color: #ffff;
+    background-color: var(--cor-secundaria-btn);
+}
+
+body
+
+/* ----------------area médica / home ------------------------------------------------------*/
+    {
+    width: 1920px;
+    height: 1100px;
+    background: #FFFFFF;
+}
+
+.box01
+
+/* Rectangle 69 */
+    {
+    position: absolute;
+    width: 1920px;
+    height: 380px;
+    left: 0px;
+    top: 76px;
+    background: linear-gradient(90deg, #EE65C7 4.54%, rgba(238, 101, 199, 0.33) 100.85%);
+    box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.box02
+
+/* Rectangle 70 */
+    {
+    position: absolute;
+    width: 1920px;
+    height: 902px;
+    left: 0px;
+    top: 272px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 40px rgba(0, 0, 0, 0.25);
+    border-radius: 130px 130px 0px 0px;
+}
+
+.fundo-branco
+
+/* area médica / home */
+    {
+    position: relative;
+    width: 1920px;
+    height: 1462px;
+    background: #000;
+}
+
+.wName
+
+/* welome name - Bem vindo + nome médico (Dr. Bruno) */
+    {
+    position: absolute;
+    width: 479px;
+    height: 57px;
+    left: 183px;
+    top: 160px;
+    background-color: transparent;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 57px;
+    color: #FFFFFF;
+}
+
+.caixa-conta,
+.caixa-paciente,
+.caixa-agenda,
+.caixa-chat
+
+/* Rectangle 72 */
+    {
+    position: absolute;
+    width: 210px;
+    height: 210px;
+    left: 1300px;
+    top: 625px;
+    background-color: transparent;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+}
+
+.minha-conta,
+.chat,
+.pacientes,
+.agenda-do-dia
+
+/* Minha conta */
+    {
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    text-align: center;
+    flex-direction: column-reverse;
+    color: #EE65C7;
+}
+
+.icon-doctor,
+.icon-calendar,
+.icon-chat,
+.icon-people
+
+/* 🦆 icon "Doctor" */
+    {
+    width: 65px;
+    height: 60px;
+    padding: 0;
+    margin: 50px auto;
+}
+
+.caixa-paciente
+
+/* Rectangle 70 */
+    {
+    left: 700px;
+}
+
+.icon-people
+
+/* 🦆 icon "People" */
+    {
+    width: 90px;
+}
+
+.caixa-chat
+
+/* Rectangle 71 */
+    {
+    left: 1000px;
+}
+
+.icon-chat
+
+/* 🦆 icon "Chat" */
+    {
+    width: 65px;
+}
+
+.caixa-agenda
+
+/* Rectangle 69 */
+    {
+    left: 400px;
+}
+
+.icon-calendar
+
+/* 🦆 icon "Calendar" */
+    {
+    width: 80px;
+}
+
+/*---------------------------------RODAPÉ DA PAGINA--------------------------------------------------------------------*/
+footer {
+    width: 1920px;
+    height: 300px;
+    align-items: top;
+}
+
+/*Posição da area sobre nos*/
+.sobre-nos {
+
+    position: absolute;
+    /*ainda não consegui arrumar isso*/
+    width: 500px;
+    height: 300px;
+    left: 268.36px;
+    top: 40px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #560F47;
+}
+
+/* Imagens do footer*/
+footer img {
+    width: 60px;
+    height: 60px;
+}
+
+/*Titulo siga-nos nas redes */
+.siga {
+
+    position: absolute;
+    width: 249px;
+    height: 78px;
+    left: 824.36px;
+    top: 25px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+
+    color: #560F47;
+
+}
+
+/*Posição dos icons dos app*/
+.redes {
+
+    position: absolute;
+    width: 50px;
+    height: 174px;
+    left: 824px;
+    top: 100px;
+    align-content: space-around;
+
+}
+
+/*posição do @pinkdiamond*/
+.p1 {
+
+    position: absolute;
+    width: 165px;
+    height: 37px;
+    left: 894.36px;
+    top: 115px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #560F47;
+
+}
+
+/*posição do @pinkdiamond*/
+.p2 {
+
+    position: absolute;
+    width: 165px;
+    height: 37px;
+    left: 894.36px;
+    top: 180px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #560F47;
+
+}
+
+/*posição do @pinkdiamond*/
+.p3 {
+
+    position: absolute;
+    width: 165px;
+    height: 37px;
+    left: 894.36px;
+    top: 240px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #560F47;
+}
+
+/*Posiçao da área dos contatos*/
+.contato {
+
+    position: absolute;
+    width: 600px;
+    height: 300px;
+    left: 1290px;
+    top: 25px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #560F47;
+
+}
+
+/*Posição da lista de contatos*/
+.lista-cntt {
+
+    list-style: none;
+    list-style-position: outside;
+    flex-direction: column;
+    align-content: space-around;
+
+}
+
+.lista-fnc {
+
+    list-style: none;
+    list-style-position: outside;
+    flex-direction: column;
+    align-content: space-around;
+
+}
+
+/*ajuste dos tamanho do icone*/
+.local {
+
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    align-content: space-around;
+}
+
+/*ajuste dos tamanho do icone*/
+.telefone {
+
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    align-content: space-around;
+}
+
+/*ajuste dos tamanho do icone*/
+.email {
+
+    width: 25px;
+    height: 25px;
+    align-items: center;
+    align-content: space-around;
+}
+
+/*ajuste do tamanho e cor dos titulos do rodape*/
+.titu {
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    margin: 15px 10px;
+    color: #560F47;
+
+}
+
+/*Posição do rodapé*/
+.footer {
+
+    position: absolute;
+    width: 1920px;
+    height: 340px;
+    left: 0px;
+    top: 1170px;
+
+    background: #FF8EA2;
+
+}
+
+/*posição da logo*/
+.logof {
+
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    left: 50px;
+    top: 50px;
+
+}

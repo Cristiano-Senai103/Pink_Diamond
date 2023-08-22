@@ -1,0 +1,488 @@
+* /* Geral Pagina Área Médica Paciente*/
+{
+    margin: 0;
+    padding: 0;
+}
+.profissional /*HEADER PALAVRA PROFISSIONAL*/
+{
+    width: 190px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 275px;
+    color: rgba(242, 201, 228, 0.58);
+}
+.perfil /*HEADER-PERFIL*/
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #ffc0cb;
+    margin: 13px;
+    cursor: pointer;
+}
+.logo /*HEADER-LOGO*/
+{
+    width: 13%;
+}
+nav /*HEADER- NAVEGAÇÃO BOTÕES INÍCIO*/
+{
+    background-color: #fff;
+    box-shadow: 0 0 15px #afafaf;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+nav, ul /*HEADER-GERAL LISTA DE BOTÕES INÍCIO*/
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+li /*HEADER-GERAL AFASTAMENTO LISTA BOTOES INÍCIO*/
+{
+    padding: 0 5px;
+}
+:root /*HEADER VARIÁVEIS DOS BOTÕES LISTA*/
+{
+    --cor-hover-btn : #fdeaed;
+    --cor-secundaria-btn : #ffc0cb;
+}
+.btn /*HEADER BTN CONFIGURAÇÃO GERAL*/
+{
+    background-color: transparent;
+    color: #ffc0cb;
+    border: none;
+    cursor: pointer;
+    transition: background .2s;
+    font-size: 16px;
+    width: 110px;
+    height: 77px;
+}
+.btn-inicio /*HEADER BTN-INICIO*/
+{
+    outline: none;
+}
+.btn-inicio:hover
+{
+    background-color: var(--cor-hover-btn);
+}
+.btn-inicio:active
+{
+    color: #ffff;
+    background-color: var(--cor-secundaria-btn
+    )
+}
+.btn-sair /*BTN-AGENDAMENTO*/
+{
+    outline: none;
+}
+.btn-sair:hover
+{
+    background-color: var(--cor-hover-btn);
+}
+.btn-sair:active 
+{
+    color: #ffff;
+    background-color: var(--cor-secundaria-btn);
+}
+body /*+++++++++++++++++++++++área medica pacientes++++++++*/
+{
+    width: 1920px;
+    height: 1460px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 40px rg (0, 0, 0, 0.25);
+}
+
+.caixa-degrade /* Caixa degrade rosa*/
+{
+    position: absolute;
+    width: 1920px;
+    height: 200px;
+    top: 76px;
+    left: 0px;
+    background: linear-gradient(90deg, #ee65c7 4.54%, rgba(238, 101, 199, 0.33) 100.85%);
+    box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
+}
+.cadastro-de-pacientes /*Texto Cadastro Pacientes*/
+{
+    position: absolute;
+    width: 479px;
+    height: 57px;
+    top: 76px;
+    left: 180px;
+    font-family: 'Abhaya Libre';
+    font-size: 48px;
+    color: #ffffff;
+}
+.info-group /*Caixa de Fundo Pesquisa e Nomes*/
+{
+    box-sizing: border-box;
+    position: absolute;
+    width: 1800px;
+    height: 990px;
+    left: 60px;
+    top: 330px;
+    background: #FFFFFF;
+    border: 5px solid #F185AD;
+    box-sizing: border-box;
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 40px;
+    flex-direction: row;
+    
+}
+#nav-search /*Nav de centralização img search, texto pesquisa e barra deprocura*/
+{
+    background-color: transparent;
+    border-radius: 40px 40px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: none;
+    height: 150px;
+}
+#ul-search /*Lista da Nav Search*/
+{
+    list-style-type: none; 
+    align-items: center;    
+}
+.li-search /*Espaçamento da lista da Nav Search*/
+{
+    padding: 10px, 20px;
+}
+p /*Estilização do texto Pesquisa*/
+{
+    font-size: 36px;
+    font-family: 'Abhaya Libre';
+    color: #EE65C7;
+}
+#barra-pesquisa /*Estilização da barra de pesquisa*/
+{
+    width: 850px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 3px solid #F394B7;
+    border-radius: 10px;
+    font-family: 'Abhaya Libre';
+    font-size: 36px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    
+}
+
+.boxes-id-00 /*Estilização da caixa de número de identificação*/
+{
+    position: absolute;
+    width: 120px;
+    height: 70px;
+    border: 3px solid rgba(241, 133, 173, 0.5);
+    border-radius: 10px;
+    font-family: 'Abhaya Libre';
+    font-size: 36px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+.boxes-id /*Estilização da caixa de número de identificação*/
+{
+    position: absolute;
+    width: 120px;
+    height: 70px;
+    border: 3px solid rgba(241, 133, 173, 0.5);
+    border-radius: 10px;
+    font-family: 'Abhaya Libre';
+    font-size: 36px;
+    box-sizing: border-box; /*Limita à área da caixa qualquer posicionamento*/
+    padding: 0px 20px;
+    
+}
+#box-id /*Caixa Fixa ID*/
+{
+    top: 160px;
+    left: 60px;
+}
+#box-id-01 /*Caixa de procura posição ID 01 */
+{
+    top: 310px;
+    left: 60px;
+    
+}
+#box-id-02 /*Caixa de procura posição ID 02 */
+{
+    top: 400px;
+    left: 60px;
+}
+#box-id-03 /*Caixa de procura posição ID 03 */
+{
+    
+    top: 490px;
+    left: 60px;
+}
+#box-id-04 /*Caixa de procura posição ID 04 */
+{
+    
+    top: 580px;
+    left: 60px;
+}
+#box-id-05 /*Caixa de procura posição ID 05 */
+{
+    
+    top: 670px;
+    left: 60px;
+}
+#box-id-06 /*Caixa de procura posição ID 06 */
+{
+    
+    top: 760px;
+    left: 60px;
+}
+#box-id-07 /*Caixa de procura posição ID 07 */
+{
+    top: 850px;
+    left: 60px;
+}
+#box-nome-paciente /*Caixa de procura posição Name */
+{
+    
+    top: 160px;
+    left: 200px;
+    
+}
+#box-nome-paciente-01 /*Caixa de procura posição Name 01 */
+{
+    
+    top: 310px;
+    left: 200px;
+}
+#box-nome-paciente-02 /*Caixa de procura posição Name 02 */
+{
+    
+    top: 400px;
+    left: 200px;
+}
+#box-nome-paciente-03 /*Caixa de procura posição Name 03 */
+{
+    
+    top: 490px;
+    left: 200px;
+}
+#box-nome-paciente-04 /*Caixa de procura posição Name 04 */
+{
+    
+    top: 580px;
+    left: 200px;
+}
+#box-nome-paciente-05 /*Caixa de procura posição Name 05 */
+{
+    
+    top: 670px;
+    left: 200px;
+}
+#box-nome-paciente-06 /*Caixa de procura posição Name 06 */
+{
+    
+    top: 760px;
+    left: 200px;
+}
+#box-nome-paciente-07 /*Caixa de procura posição Name 07 */
+{
+    
+    top: 850px;
+    left: 200px;
+}
+.boxes-nome-paciente-00 
+{
+    position: absolute;
+    width: 900px;
+    height: 70px;
+    border: 3px solid rgba(241, 133, 173, 0.5);
+    border-radius: 10px;
+    font-family: 'Abhaya Libre';
+    padding: 0px, 30px;
+    font-size: 36px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+.boxes-nome-paciente
+{
+    position: absolute;
+    width: 900px;
+    height: 70px;
+    border: 3px solid rgba(241, 133, 173, 0.5);
+    border-radius: 10px;
+    font-family: 'Abhaya Libre';
+    padding: 0px, 30px;
+    font-size: 36px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+#box-celular /*Caixa de procura posição Cel */
+{
+    
+    top: 160px;
+    left: 1120px;
+}
+#box-celular-01 /*Caixa de procura posição Cel 01 */
+{
+    
+    top: 310px;
+    left: 1120px;
+}
+#box-celular-02 /*Caixa de procura posição Cel 02 */
+{
+    
+    top: 400px;
+    left: 1120px;
+}
+#box-celular-03 /*Caixa de procura posição Cel 03 */
+{
+    
+    top: 490px;
+    left: 1120px;
+}
+#box-celular-04 /*Caixa de procura posição Cel 04 */
+{
+    
+    top: 580px;
+    left: 1120px;
+}
+#box-celular-05 /*Caixa de procura posição Cel 05 */
+{
+   
+    top: 670px;
+    left: 1120px;
+}
+#box-celular-06 /*Caixa de procura posição Cel 06 */
+{
+    
+    top: 760px;
+    left: 1120px;
+}
+#box-celular-07 /*Caixa de procura posição Cel 07 */
+{
+    
+    top: 850px;
+    left: 1120px;
+}
+.boxes-celular-00
+{
+    position: absolute;
+    width: 250px;
+    height: 70px;
+    border: 3px solid rgba(241, 133, 173, 0.5);
+    border-radius: 10px;
+    font-family: 'Abhaya Libre';
+    padding: 0px, 30px;
+    font-size: 36px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    appearance: none;
+}
+input::-webkit-inner-spin-button  /*Retira arrows das input de numeros */
+{
+  display: none;
+}
+.boxes-celular
+{
+    position: absolute;
+    width: 250px;
+    height: 70px;
+    border: 3px solid rgba(241, 133, 173, 0.5);
+    border-radius: 10px;
+    font-family: 'Abhaya Libre';
+    font-size: 36px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    
+}
+#box-cpf /*Caixa de procura posição CPF */
+{   
+    
+    top: 160px;
+    left: 1390px;
+}
+#box-cpf-01 /*Caixa de procura posição CPF 01 */
+{
+    
+    top: 310px;
+    left: 1390px;
+}
+#box-cpf-02 /*Caixa de procura posição CPF 02 */
+{
+    
+    top: 400px;
+    left: 1390px;
+}
+#box-cpf-03 /*Caixa de procura posição CPF 03 */
+{
+    
+    top: 490px;
+    left: 1390px;
+}
+#box-cpf-04 /*Caixa de procura posição CPF 04 */
+{
+    
+    top: 580px;
+    left: 1390px;
+} 
+#box-cpf-05 /*Caixa de procura posição CPF 05 */
+{
+    
+    top: 670px;
+    left: 1390px;
+}
+#box-cpf-06 /*Caixa de procura posição CPF 06 */
+{
+    
+    top: 760px;
+    left: 1390px;
+}
+#box-cpf-07 /*Caixa de procura posição CPF 07 */
+{
+    
+    top: 850px;
+    left: 1390px;
+}
+.boxes-cpf-00
+{
+    position: absolute;
+    width: 350px;
+    height: 70px;
+    top: 160px;
+    left: 1390px;
+    border: 3px solid rgba(241, 133, 173, 0.5);
+    border-radius: 10px;
+    font-family: 'Abhaya Libre';
+    font-size: 36px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 0px 20px;
+}
+.boxes-cpf
+{
+    position: absolute;
+    width: 350px;
+    height: 70px;
+    top: 160px;
+    left: 1390px;
+    border: 3px solid rgba(241, 133, 173, 0.5);
+    border-radius: 10px;
+    font-family: 'Abhaya Libre';
+    font-size: 36px;
+    box-sizing: border-box;
+    padding: 0px 20px;
+    text-align: justify;
+}

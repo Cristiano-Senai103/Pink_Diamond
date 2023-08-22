@@ -1,0 +1,986 @@
+* /* Geral Pagina Área Médica Paciente*/
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.profissional /*HEADER PALAVRA PROFISSIONAL*/
+{
+    width: 190px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 275px;
+    color: rgba(242, 201, 228, 0.58);
+}
+.perfil /*HEADER-PERFIL*/
+{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #ffc0cb;
+    margin: 13px;
+    cursor: pointer;
+}
+.logo /*HEADER-LOGO*/
+{
+    width: 13%;
+}
+nav /*HEADER- NAVEGAÇÃO BOTÕES INÍCIO*/
+{
+    background-color: #fff;
+    box-shadow: 0 0 15px #afafaf;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+nav, ul /*HEADER-GERAL LISTA DE BOTÕES INÍCIO*/
+{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+li /*HEADER-GERAL AFASTAMENTO LISTA BOTOES INÍCIO*/
+{
+    padding: 0 5px;
+}
+:root /*HEADER VARIÁVEIS DOS BOTÕES LISTA*/
+{
+    --cor-hover-btn : #fdeaed;
+    --cor-secundaria-btn : #ffc0cb;
+}
+.btn /*HEADER BTN CONFIGURAÇÃO GERAL*/
+{
+    background-color: transparent;
+    color: #ffc0cb;
+    border: none;
+    cursor: pointer;
+    transition: background .2s;
+    font-size: 16px;
+    width: 110px;
+    height: 77px;
+}
+.btn-inicio /*HEADER BTN-INICIO*/
+{
+    outline: none;
+}
+.btn-inicio:hover
+{
+    background-color: var(--cor-hover-btn);
+}
+.btn-inicio:active
+{
+    color: #ffff;
+    background-color: var(--cor-secundaria-btn
+    )
+}
+.btn-sair /*BTN-AGENDAMENTO*/
+{
+    outline: none;
+}
+.btn-sair:hover
+{
+    background-color: var(--cor-hover-btn);
+}
+.btn-sair:active 
+{
+    color: #ffff;
+    background-color: var(--cor-secundaria-btn);
+}
+body /*+++++++++++++++++++++++++++++++++++++++++++++++++++++++área medica pacientes+++++++++++++++++++++++++++++++++++++++++++++*/
+{
+    width: 1920px;
+    height: 1460px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 40px rg (0, 0, 0, 0.25);
+}
+
+.caixa-degrade /* Caixa degrade rosa*/
+{
+    position: absolute;
+    width: 1920px;
+    height: 200px;
+    top: 76px;
+    left: 0px;
+    background: linear-gradient(90deg, #ee65c7 4.54%, rgba(238, 101, 199, 0.33) 100.85%);
+    box-shadow: inset 0px 4px 20px rgba(0, 0, 0, 0.25);
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+#body-back-img 
+{
+    border-radius: 100px;
+    background: #FFFFFF;
+    text-align: center;
+    padding: 6px;
+}
+#body-patient-name /*Texto Cadastro Pacientes*/
+{
+    font-family: 'Abhaya Libre';
+    font-size: 48px;
+    color: #ffffff;
+}
+#body-patient-appointment
+{
+    font-family: 'Alike Angular';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    color: #FFFFFF;
+    font-size: 48px;
+}
+#body-back-patient-appointment-number
+{
+    width: 100px;
+    height: 100px;
+    background: #FFFFFF;
+    border: 8px solid #EE65C7;
+    border-radius: 100px;
+    text-align: center;
+    padding: 16px;
+    font-size: 48px;
+    color: #EE65C7;
+}
+#body-btn-exames
+{
+    background: #F8C2D6;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #F185AD;
+    border-radius: 20px 20px 0px 0px;
+    position: absolute;
+    width: 200px;
+    height: 44.45px;
+    left: 110px;
+    top: 349px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #EE65C7;
+}
+#body-btn-prontuario
+{
+    background: #F8C2D6;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #F185AD;
+    border-radius: 20px 20px 0px 0px;
+    position: absolute;
+    width: 200px;
+    height: 44.45px;
+    left: 302px;
+    top: 349px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #EE65C7;
+}
+#body-btn-prescricao
+{
+    background: #F8C2D6;
+    border-width: 1px 1px 0px 1px;
+    border-style: solid;
+    border-color: #F185AD;
+    border-radius: 20px 20px 0px 0px;
+    position: absolute;
+    width: 200px;
+    height: 44.45px;
+    left: 494px;
+    top: 349px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    color: #EE65C7;
+}
+#info-group /*Caixa de Fundo Pesquisa e Nomes*/
+{
+    position: absolute;
+    width: 1700px;
+    height: 999.44px;
+    left: 110px;
+    top: 392.56px;
+    background: #F8C2D6;
+    mix-blend-mode: normal;
+    border: 1px solid #F185AD;
+    border-radius: 0px 20px 20px 20px;
+}
+.bodybox-appointment
+{
+    box-sizing: border-box;
+    width: 250px;
+    height: 105px;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 10px; 
+}
+#bodybox-appointment01 
+{
+    position: relative;
+    top: 80px;
+    left: 46px;
+}
+#checkbox01 
+ {
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 53px;
+    
+}
+#bodybox-atendimento01 
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-ID01 
+{
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 52px;
+    top: 50px;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+#bodybox-appointment02
+{
+    position: absolute;
+    top: 195px;
+    left: 46px;
+}
+#checkbox02
+ {
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 53px;
+}
+#bodybox-atendimento02
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-ID02
+{
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 52px;
+    top: 50px;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+#bodybox-appointment03
+{
+    position: absolute;
+    top: 310px;
+    left: 46px;
+}
+#checkbox03
+ {
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 53px;
+}
+#bodybox-atendimento03
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-ID03
+{
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 52px;
+    top: 50px;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+#bodybox-appointment04
+{
+    position: absolute;
+    top: 425px;
+    left: 46px;
+}
+#checkbox04
+ {
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 53px;
+}
+#bodybox-atendimento04
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-ID04
+{
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 52px;
+    top: 50px;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+#bodybox-appointment05
+{
+    position: absolute;
+    top: 540px;
+    left: 46px;
+}
+#checkbox05
+ {
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 53px;
+}
+#bodybox-atendimento05
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-ID05
+{
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 52px;
+    top: 50px;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+#bodybox-appointment06
+{
+    position: absolute;
+    top: 655px;
+    left: 46px;
+}
+#checkbox06
+ {
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 53px;
+}
+#bodybox-atendimento06
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-ID06
+{
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 52px;
+    top: 50px;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+#bodybox-appointment07
+{
+    position: absolute;
+    top: 770px;
+    left: 46px;
+}
+#checkbox07
+ {
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 15px;
+    top: 53px;
+}
+#bodybox-atendimento07
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-ID07
+{
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 52px;
+    top: 50px;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+.bodybox-pkd
+{
+    box-sizing: border-box;
+    width: 180px;
+    height: 105px;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 10px; 
+}
+#bodybox-pkd01
+{
+    position: absolute;
+    top: 80px;
+    left: 300px;
+}
+#bodybox-text-pkd01
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-date01
+{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+#bodybox-pkd02
+{
+    position: absolute;
+    top: 195px;
+    left: 300px;
+}
+#bodybox-text-pkd02
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-date02
+{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+#bodybox-pkd03
+{
+    position: absolute;
+    top: 310px;
+    left: 300px;
+}
+#bodybox-text-pkd03
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-date03
+{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+#bodybox-pkd04
+{
+    position: absolute;
+    top: 425px;
+    left: 300px;
+}
+#bodybox-text-pkd04
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-date04
+{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+#bodybox-pkd05
+{
+    position: absolute;
+    top: 540px;
+    left: 300px;
+}
+#bodybox-text-pkd05
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-date05
+{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+#bodybox-pkd06
+{
+    position: absolute;
+    top: 655px;
+    left: 300px;
+}
+#bodybox-text-pkd06
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-date06
+{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+#bodybox-pkd07
+{
+    position: absolute;
+    top: 770px;
+    left: 300px;
+}
+#bodybox-text-pkd07
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-date07
+{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    font-size: 34px;
+    font-family: sans-serif;
+}
+.bodybox-prescrição
+{
+    box-sizing: border-box;
+    width: 200px;
+    height: 105px;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+#bodybox-prescrição01
+{
+    position: absolute;
+    top: 80px;
+    left: 484px;
+}
+#bodybox-text-prescrição01
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-AD01
+{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+#bodybox-prescrição02
+{
+    position: absolute;
+    top: 195px;
+    left: 484px;
+}
+#bodybox-text-prescrição02
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-AD02
+{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+#bodybox-prescrição03
+{
+    position: absolute;
+    top: 310px;
+    left: 484px;
+}
+#bodybox-text-prescrição03
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-AD03
+{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+#bodybox-prescrição04
+{
+    position: absolute;
+    top: 425px;
+    left: 484px;
+}
+#bodybox-text-prescrição04
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-AD04
+{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+#bodybox-prescrição05
+{
+    position: absolute;
+    top: 540px;
+    left: 484px;
+}
+#bodybox-text-prescrição05
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-AD05
+{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+#bodybox-prescrição06
+{
+    position: absolute;
+    top: 655px;
+    left: 484px;
+}
+#bodybox-text-prescrição06
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-AD06
+{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+#bodybox-prescrição07
+{
+    position: absolute;
+    top: 770px;
+    left: 484px;
+}
+#bodybox-text-prescrição07
+{
+    position: relative;
+    text-align: center;
+    top: 17px;
+    font-size: 16px;
+    line-height: 21px;
+}
+#bodybox-AD07
+{
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    top: 35px;
+    font-size: 16px;
+    font-family: sans-serif;
+}
+.bodybox-exame
+{
+    box-sizing: border-box;
+    width: 960px;
+    height: 105px;
+    background: #FFFFFF;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+#bodybox-exame01
+{
+    position: absolute;
+    top: 80px;
+    left: 687px;
+    font-size: 34px;
+}
+#bodybox-text-exame01
+{
+    position: relative;
+    text-align: left;
+    padding: 30px;
+}
+#bodybox-download01
+{
+    position: absolute;
+    top: 10px;
+    left: 800px;
+}
+#bodybox-look01
+{
+    position: absolute;
+    top: 10px;
+    left: 870px;
+}
+#bodybox-exame02
+{
+    position: absolute;
+    top: 195px;
+    left: 687px;
+    font-size: 34px;
+}
+#bodybox-text-exame02
+{
+    position: relative;
+    text-align: left;
+    padding: 30px;
+}
+#bodybox-download02
+{
+    position: absolute;
+    top: 10px;
+    left: 800px;
+}
+#bodybox-look02
+{
+    position: absolute;
+    top: 10px;
+    left: 870px;
+}
+#bodybox-exame03
+{
+    position: absolute;
+    top: 310px;
+    left: 687px;
+    font-size: 34px;
+}
+#bodybox-text-exame03
+{
+    position: relative;
+    text-align: left;
+    padding: 30px;
+}
+#bodybox-download03
+{
+    position: absolute;
+    top: 10px;
+    left: 800px;
+}
+#bodybox-look03
+{
+    position: absolute;
+    top: 10px;
+    left: 870px;
+}
+#bodybox-exame04
+{
+    position: absolute;
+    top: 425px;
+    left: 687px;
+    font-size: 34px;
+}
+#bodybox-text-exame04
+{
+    position: relative;
+    text-align: left;
+    padding: 30px;
+}
+#bodybox-download04
+{
+    position: absolute;
+    top: 10px;
+    left: 800px;
+}
+#bodybox-look04
+{
+    position: absolute;
+    top: 10px;
+    left: 870px;
+}
+#bodybox-exame05
+{
+    position: absolute;
+    top: 540px;
+    left: 687px;
+    font-size: 34px;
+}
+#bodybox-text-exame05
+{
+    position: relative;
+    text-align: left;
+    padding: 30px;
+}
+#bodybox-download05
+{
+    position: absolute;
+    top: 10px;
+    left: 800px;
+}
+#bodybox-look05
+{
+    position: absolute;
+    top: 10px;
+    left: 870px;
+}
+#bodybox-exame06
+{
+    position: absolute;
+    top: 655px;
+    left: 687px;
+    font-size: 34px;
+}
+#bodybox-text-exame06
+{
+    position: relative;
+    text-align: left;
+    padding: 30px;
+}
+#bodybox-download06
+{
+    position: absolute;
+    top: 10px;
+    left: 800px;
+}
+#bodybox-look06
+{
+    position: absolute;
+    top: 10px;
+    left: 870px;
+}
+#bodybox-exame07
+{
+    position: absolute;
+    top: 770px;
+    left: 687px;
+    font-size: 34px;
+}
+#bodybox-text-exame07
+{
+    position: relative;
+    text-align: left;
+    padding: 30px;
+}
+#bodybox-download07
+{
+    position: absolute;
+    top: 10px;
+    left: 800px;
+}
+#bodybox-look07
+{
+    position: absolute;
+    top: 10px;
+    left: 870px;
+}

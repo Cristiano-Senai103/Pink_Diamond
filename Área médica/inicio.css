@@ -1,0 +1,883 @@
+/*HEADER-GERAL*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+
+    background-color: #fff;
+    min-width: 300px;
+    max-width: 12000px;
+    margin: auto;
+
+}
+
+.perfil{
+
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #FFC0CB;
+    margin: 13px;
+    cursor: pointer;
+
+}
+
+.logo{
+
+    width: 13%;
+    padding-left: 10px;
+
+}
+
+.navheader{
+
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 0 20px #afafaf;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+
+}
+
+.listab{
+
+    list-style: none;
+
+}
+
+.navheader, .listab{
+
+    display: flex;
+    flex-direction: row;
+
+}
+
+li{
+
+    padding: 0 5px;
+
+}
+
+/*VARIAVEIS-BTN*/
+
+:root{
+
+    --cor-primaria-inicio : transparent;
+    --cor-hover-inicio : #fdeaed;
+    --cor-secundaria-inicio : #FFC0CB;
+
+    --cor-primaria-agendamento : transparent;
+    --cor-hover-agendamento : #fdeaed;
+    --cor-secundaria-agendamento : #FFC0CB;
+
+    --cor-primaria-cadastro : transparent;
+    --cor-hover-cadastro : #fdeaed;
+    --cor-secundaria-cadastro : #FFC0CB;
+
+    --cor-primaria-login : transparent;
+    --cor-hover-login : #fdeaed;
+    --cor-secundaria-login : #FFC0CB;
+
+}
+
+
+/*BTN-CONFIG GERAL*/
+
+.btn{
+
+    border: none;
+    cursor: pointer;
+    transition: background .2s;
+    font-size: 16px;
+    height: 77px;
+    width: 110px;
+
+}
+
+
+/*BTN-INICIO*/
+
+.btn-inicio{
+
+    background-color: var(--cor-primaria-inicio);
+    outline: none;
+    color: var(--cor-secundaria-inicio);
+
+}
+
+.btn-inicio:hover{
+
+    background-color: var(--cor-hover-inicio);
+
+}
+
+.btn-inicio:active {
+
+    color: #ffff;
+    background-color: var(--cor-secundaria-inicio);
+
+}
+
+/*BTN-AGENDAMENTO*/
+
+.btn-agendamento{
+
+    background-color: var(--cor-primaria-agendamente);
+    outline: none;
+    color: var(--cor-secundaria-agendamento);
+
+}
+
+.btn-agendamento:hover{
+
+    background-color: var(--cor-hover-agendamento);
+
+}
+
+.btn-agendamento:active {
+
+    color: #ffff;
+    background-color: var(--cor-secundaria-agendamento);
+
+}
+
+/*BTN-CADASTRO*/
+
+.btn-cadastro{
+
+    background-color: var(--cor-primaria-cadastro);
+    outline: none;
+    color: var(--cor-secundaria-cadastro);
+
+}
+
+.btn-cadastro:hover{
+
+    background-color: var(--cor-hover-cadastro);
+
+}
+
+.btn-cadastro:active {
+
+    color: #ffff;
+    background-color: var(--cor-secundaria-cadastro);
+
+}
+
+/*BTN-LOGIN*/
+
+.btn-login{
+
+    background-color: var(--cor-primaria-login);
+    outline: none;
+    color: var(--cor-secundaria-login);
+
+}
+
+.btn-login:hover{
+
+    background-color: var(--cor-hover-login);
+
+}
+
+.btn-login:active {
+
+    color: #ffff;
+    background-color: var(--cor-secundaria-login);
+
+}
+
+
+/*INICIO DA PAGINA*/
+
+/* Define a posicao e o tamanho da foto do fundo*/
+.fundo_toalha{
+
+    position: absolute;
+    width: 1920px;
+    height: 938px;
+    left: 0px;
+    top: 75px;
+    border-radius: 0px 0px 120px 120px;
+    box-shadow: 4px 10px 20px rgba(0, 0, 0, 0.25);
+
+}
+
+/*Posicao da caixa atras do texto*/
+.q_texto{
+
+    position: absolute;
+    width: 872px;
+    height: 312px;
+    left: 166px;
+    top: 365px;
+    background: rgba(79, 27, 36, 0.71);
+    border-radius: 41px;
+
+}
+
+/*Posicao do texto*/
+.text_i{
+
+    position: absolute;
+    width: 722.03px;
+    height: 213.08px;
+    left: 240.53px;
+    top: 392.1px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: justify;
+    color: #FFF4FB;position: absolute;
+    width: 722.03px;
+    height: 213.08px;
+    left: 240.53px;
+    top: 392.1px;
+
+}
+
+/*Posicao da caixa do alinhamento*/
+.pre_agnd{
+
+    position: absolute;
+    width: 385px;
+    height: 517px;
+    left: 1314px;
+    top: 241px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 41px;
+
+}
+
+/*Posicao do texto do pre agendamento*/
+.text_agnd{
+
+    position: absolute;
+    width: 313px;
+    height: 35px;
+    left: 1350px;
+    top: 273px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #560F47;
+
+}
+
+/*Posicao do quadrado do nome*/
+.agnd_nome{
+
+    box-sizing: border-box;
+    position: absolute;
+    width: 219.14px;
+    height: 50px;
+    left: 1400px;
+    top: 341px;
+    border: 1px solid #787778;
+    border-radius: 41px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #787778;
+    padding: 15px;
+
+}
+
+/*Posicao do quadrado do email*/
+.agnd_email{
+
+    box-sizing: border-box;
+    position: absolute;
+    width: 219.14px;
+    height: 51.29px;
+    left: 1399px;
+    top: 487px;
+    background: #FFFFFF;
+    border: 1px solid #787778;
+    border-radius: 41px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;  
+    color: #787778;
+    padding: 15px;
+
+}
+
+/*Posicao do quadrado do telefone*/
+.agnd_telefone{
+
+    box-sizing: border-box;
+    position: absolute;
+    width: 219.14px;
+    height: 51.29px;
+    left: 1400px;
+    top: 412px;
+    background: #FFFFFF;
+    border: 1px solid #787778;
+    border-radius: 41px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #787778;
+    padding: 15px;
+
+}
+
+/*posicao do quadro de interesse*/
+.agnd_interesse{
+
+    box-sizing: border-box;
+    position: absolute;
+    width: 219.14px;
+    height: 51.29px;
+    left: 1400px;
+    top: 558px;
+    background: #FFFFFF;
+    border: 1px solid #787778;
+    border-radius: 41px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #787778;
+    padding: 15px;
+    
+}
+
+/*Posicao do texto  de interesse*/ 
+.agnd_text_interesse{
+
+    position: absolute;
+    width: 90.19px;
+    height: 25.65px;
+    left: 1412px;
+    top: 569px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #787778;
+
+}
+
+/*Posicao do botao enviar*/
+.Enviar{
+
+    position: absolute;
+    width: 219.14px;
+    height: 51.29px;
+    left: 1401.07px;
+    top: 667.59px;
+    background: #FF8EA2;
+    border-radius: 41px;
+    border: none;
+   
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    text-decoration: none;
+
+}
+
+/*Posicao do fundo rosa por trás da tela*/
+.fundo_rosa{
+
+    position: absolute;
+    width: 1920px;
+    height: 1130px;
+    left: 0px;
+    top: 76px;
+    background: #FFC0CB;
+
+}
+
+/*Posicao do quadro branco dos botoes*/
+.quadro_branco{
+
+    position: absolute;
+    width: 1920px;
+    height: 881.59px;
+    left: 0px;
+    top: 1108px;
+    background: #FFFFFF;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 110px 110px 0px 0px;
+
+}
+
+/*Titulo dos servicos*/
+.titulo_servico{
+
+    position: absolute;
+    width: 330px;
+    height: 51px;
+    left: 777px;
+    top: 1030px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 57px;
+    color: #560F47;
+}
+
+/*fundo branco do botao spa*/
+.fundo_spa{
+
+    position: absolute;
+    width: 349px;
+    height: 370px;
+    left: 95px;
+    top: 1194px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 41px;
+
+}
+
+/*botao spa*/
+.bnt_spa{
+
+    position: absolute;
+    width: 303px;
+    height: 56px;
+    left: 118px;
+    top: 1492px;
+    background: #FFC0CB;
+    border-radius: 41px;
+
+}
+
+/*texto do botao spa*/
+.text_spa{
+
+    position: absolute;
+    width: 92px;
+    height: 60px;
+    left: 223px;
+    top: 1497px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #560F47;
+
+}
+
+/*posicao da imagem do spa*/
+.img_spa{
+
+    position: absolute;
+    width: 273px;
+    height: 226px;
+    left: 132px;
+    top: 1224px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 41px;
+
+}
+
+/*fundo branco do botao espaço beleza*/
+.fundo_spcb{
+
+    position: absolute;
+    width: 350px;
+    height: 370px;
+    left: 565px;
+    top: 1194px; 
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 41px;
+
+}
+
+/*botao espaço beleza*/
+.bnt_spcb{
+
+    position: absolute;
+    width: 303px;
+    height: 56px;
+    left: 586px;
+    top: 1490px;
+    background: #FFC0CB;
+    border-radius: 41px;
+
+}
+
+/*texto do botao espaço beleza*/
+.text_spcb{
+
+    position: absolute;
+    width: 273px;
+    height: 60px;
+    left: 601px;
+    top: 1497px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #560F47;
+
+}
+
+/*imagem do botao espaço beleza*/
+.img_spcb{
+
+
+    position: absolute;
+    width: 273px;
+    height: 226px;
+    left: 602px;
+    top: 1224px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 41px;    
+
+}
+
+/*fundo branco do botao dermatologia*/
+.fundo_dmt{
+
+    position: absolute;
+    width: 351px;
+    height: 370px;
+    left: 1036px;
+    top: 1194px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 41px;
+
+}
+
+/*botao dermatologia*/
+.bnt_dmt{
+
+    position: absolute;
+    position: absolute;
+    width: 303px;
+    height: 55px;
+    left: 1059px;
+    top: 1490px;
+    background-color:#FFC0CB;
+    border-radius: 41px;
+
+}
+
+/*texto do botao dermatologia*/
+.text_dmt{
+
+    position: absolute;
+    width: 274px;
+    height: 60px;
+    left: 1073px;
+    top: 1497px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #560F47;
+
+}
+
+/*imagem do botao dermatologia*/
+.img_dmt{
+
+    position: absolute;
+    width: 273px;
+    height: 226px;
+    left: 1079px;
+    top: 1224px;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 41px;
+
+}
+
+/*fundo branco do botao estetica*/
+.fundo_etc{
+
+    position: absolute;
+    width: 350px;
+    height: 370px;
+    left: 1476px;
+    top: 1194px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.25);
+    border-radius: 41px;
+
+}
+
+/*botao estetica*/
+.bnt_etc{
+
+    position: absolute;
+    width: 303px;
+    height: 55px;
+    left: 1500px;
+    top: 1494px;
+    background-color: #FFC0CB;
+    border-radius: 41px;
+
+}
+
+/*texto do botao estetica*/
+.text_etc{
+
+    position: absolute;
+    width: 273px;
+    height: 60px;
+    left: 1514px;
+    top: 1499px;
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 38px;
+    text-align: center;
+    color: #560F47;
+
+}
+
+/*imagem do botao estetica*/
+.img_etc{
+
+    position: absolute;
+    width: 273px;
+    height: 226px;
+    left: 1508px;
+    top: 1224px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 41px;
+}
+
+
+
+
+
+/*INICIO DO FOOTER*/
+
+body{
+
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-width: 300px;
+    max-width: 12000px;
+    margin: auto;
+
+}
+
+
+
+footer{
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 328px;
+    top: 1700px;
+    background-color: #FF8EA2;
+    
+}
+      
+   
+/*lista dos sobre nos, siga-nos, contato*/
+.li_ft{
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-around;
+    list-style: none;
+    top: 30px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 40;
+    font-size: 32px;
+    line-height: 38px;
+    color: #560F47;
+
+}
+
+/*texto sobre nos*/
+.txt_sobre_nos{
+
+    position: absolute;
+    width: 500px;
+    height: 30px;
+    margin-left: 260px;
+    top: 100px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: #560F47;
+}
+
+/*imagem sobre nos*/
+.img_sobre_nos{
+
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 60px;
+    margin-left: 50px;
+    
+    
+
+}
+
+/*lista dos @pink diamond*/
+.a_s{
+
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    left: 890px;
+    padding: 5px;
+    justify-content: space-around;
+   
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 40;
+    font-size: 24px;
+    line-height: 28px;
+    color: #560F47;
+    top: 90px;
+}
+
+/* o prof q fex n sei oq é k*/
+.container{
+
+    min-height: 100vh;
+    position: relative;
+    
+}
+
+/* posiçao das redes sociais*/
+.rede_rd{
+
+    list-style: none;
+    position: relative;
+
+}
+
+/*posiçao das imagens para os links*/
+.links_rd{
+
+    position: absolute;
+    top: 80px;
+    left: 830px;
+
+}
+
+/* tamanho das imagens*/
+.img_rd_face{
+
+    width: 60px;
+    height: 60px;
+    
+}
+
+/* tamanho das imagens*/
+.img_rd_insta{
+
+    width: 60px;
+    height: 60px;
+
+}
+
+/* tamanho das imagens*/
+.img_rd_tt{
+
+    width: 60px;
+    height: 60px;
+
+}
+
+/*Posiçao da área dos contatos*/
+.contato{
+
+    position: absolute;
+    display: flex;
+    width: 600px;
+    height: 30px;
+    margin-left: 1280px;
+    padding: 50px;
+
+    font-family: 'Abhaya Libre';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+
+    color: #560F47;
+
+}
+
+/*Posição da lista de contatos*/
+.lista-cntt{
+
+    list-style: none;
+
+}
+
+/*ajuste dos tamanho do icone*/
+.local{
+
+    width: 25px;
+    height: 25px;
+ 
+}
+
+/*ajuste dos tamanho do icone*/
+.telefone{
+
+    width: 25px;
+    height: 25px;
+
+}
+
+/*ajuste dos tamanho do icone*/
+.email{
+
+    width: 25px;
+    height: 25px;
+
+}

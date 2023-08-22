@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector</title>
+</head>
+
+<body>
+
+    <section>
+        <div class="divSelector">
+            <label for="name" name="nome" >Nome:</label>
+            <input type="text" name="nome" id="nome">
+            <label for="dia" >Dia do nascimento:</label>
+            <select>
+                <option>01</option>
+                <option>02</option>
+                <option>03</option>
+                
+            </select>
+        </div>
+    </section>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.6rem;
+}
+body{
+    max-width: 32rem;
+    min-width: 16rem;
+    border: solid black 5px;
+    margin: auto;
+}
+
+select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-scroll-snap-type: none;
+    -o-appearance: none;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    
+}
+
+input{
+    width: 50%;
+}
+.divSelector{
+    display: flex;
+    flex-direction: row;
+    margin: 3rem;
+    padding: 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+</style>
+
+
+</body>
+
+</html>
