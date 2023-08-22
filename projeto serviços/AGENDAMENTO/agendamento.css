@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+
+#perfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #FFC0CB;
+    margin: 13px;
+    cursor: pointer;
+}
+
+#logo{
+    width: 13%;
+    padding-left: 10px;
+}
+
+.header{
+    background-color: #fff;
+    box-shadow: 0 0 15px #afafaf;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.list{
+    list-style: none;
+}
+
+.header, .list{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    padding: 0 5px;
+}
+
+/*VARIAVEIS-BTN*/
+:root{
+    --cor-hover-btn : #fdeaed;
+    --cor-secundaria-btn : #FFC0CB;
+    --cor-hover: #ff99aa;
+    --cor-2: #ff778e;
+}
+
+
+/*BTN-CONFIG GERAL*/
+.btn{
+    background-color: transparent;
+    color: #FFC0CB;
+    border: none;
+    cursor: pointer;
+    transition: background .2s;
+    font-size: 16px;
+    height: 100%;
+    width: 100px;
+}
+
+
+/*BTN-INICIO*/
+.btn-header{
+    outline: none;
+}
+
+.btn-header:hover{
+    background-color: var(--cor-hover-btn);
+}
+
+.btn-header:active {
+    color: #ffff;
+    background-color: var(--cor-secundaria-btn);
+}
+
+/*body*/
+/*gender*/
+.block{
+    width: 400px;
+    height: 150px;
+    border-radius: 40px;
+    box-shadow: 0px 5px 10px 2px #afafaf;
+    margin-top: 40px;
+    margin-left: 200px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    font-size: 25px;
+}
+
+.checkbox-gender {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    gap: 20px;
+    font-size: 20px;
+}
+
+/*turnos*/
+
+.shifts{
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.checkbox-shifts{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    margin-top: 30px;
+    gap: 20px;
+    font-size: 20px;
+}
+
+.horas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#input-hora{
+    margin-top: 15px;
+    height: 30px;
+    border-radius: 10px;
+}
+/*medicos disponiveis*/
+
+.medico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 250px;
+}
+
+#medico{
+    background-color: #fff;
+    box-shadow: 0px 2px 5px 2px #afafaf;
+    display: flex;
+    border-radius: 30px;
+    width: 320px;
+    height: 120px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+
+#img-medico{
+    background-color: #ff778e;
+    width: 90px;
+    height: 90px;
+    border-radius: 100px;
+}
+
+#info-medico{
+    list-style: none;
+}
+
+#nome-medico{
+    font-size: 25px;
+}
+
+#medico{
+    
+    transition: .2s;
+}
+
+/*calendario*/

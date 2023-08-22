@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="agendamento.css">
+    <script src="agendamento.js" defer></script>
+    <title>Agendamento</title>
+</head>
+<body>
+    <header>
+        <nav class="header">
+            <img id="logo" src="/img/logo-header.svg">
+            <div id="botoes">
+                <ul class="list">
+                    <li><button class="btn btn-header">Inicio</button></li>
+                    <li><button class="btn btn-header">Agendamento</button></li>
+                    <li><button class="btn btn-header">Cadastro</button></li>
+                    <li><button class="btn btn-header">Login</button></li>
+                    
+                    <a href=""><div id="perfil"></div></a>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section>
+        <div class="block gender">
+            <div class="title">
+                <p>Selecione o genero do profissional</p>
+            </div>
+            <ul class="checkbox-gender">
+                <input type="checkbox" id="female">
+                <label for="female">Feminino</label>
+
+                <input type="checkbox" id="male">
+                <label for="male">Masculino</label>
+            </ul>
+        </div>
+
+        <div class="block shifts">
+            <div class="title">
+                <p>Selecione os turnos de preferencia</p>
+            </div>
+            <ul class="checkbox-shifts">
+                <input type="checkbox" id="manha">
+                <label for="manha">Manhã</label>
+
+                <input type="checkbox" id="tarde">
+                <label for="tarde">Tarde</label>
+
+                <input type="checkbox" id="noite">
+                <label for="noite">Noite</label>
+            </ul>
+
+            <div class="title horas">
+                <p>Escolha um horário</p>
+                <div id="horario-disponivel">
+                    <select id="input-hora">
+                        <option>escolha um horario</option>
+                        <option value=""></option>
+                    </select>
+                </div>
+            </div> 
+        </div>
+
+        <div class="block medico">
+            <div class="title">
+                <p>Médicos disponíveis</p>
+            </div>
+            <div id="medico">
+                <div id="img-medico"></div>
+                <ul id="info-medico">
+                    <li id="nome-medico">nome do medico</li>
+                    <li>area do medico</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

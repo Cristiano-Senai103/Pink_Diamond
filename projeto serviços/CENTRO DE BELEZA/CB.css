@@ -1,0 +1,193 @@
+/*HEADER-GERAL*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*header*/
+body{
+    background-color: #FFC0CB;
+}
+
+#perfil{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background-color: #FFC0CB;
+    margin: 13px;
+    cursor: pointer;
+}
+
+#logo{
+    width: 13%;
+    padding-left: 10px;
+}
+
+.header{
+    background-color: #fff;
+    box-shadow: 0 0 15px #afafaf;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+.list{
+    list-style: none;
+}
+
+.header, .list{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    padding: 0 5px;
+}
+
+/*VARIAVEIS-BTN*/
+:root{
+    --cor-hover-btn : #fdeaed;
+    --cor-secundaria-btn : #FFC0CB;
+    --cor-hover: #ff99aa;
+    --cor-2: #ff778e;
+}
+
+
+/*BTN-CONFIG GERAL*/
+.btn{
+    background-color: transparent;
+    color: #FFC0CB;
+    border: none;
+    cursor: pointer;
+    transition: background .2s;
+    font-size: 16px;
+    height: 77px;
+    width: 110px;
+}
+
+
+/*BTN-INICIO*/
+.btn-header{
+    outline: none;
+}
+
+.btn-header:hover{
+    background-color: var(--cor-hover-btn);
+}
+
+.btn-header:active {
+    color: #ffff;
+    background-color: var(--cor-secundaria-btn);
+}
+
+
+/*dermatologia banner*/
+.banner-cb{
+    background-image: url(/img/imagem-CB.png);
+    position: absolute;
+    width: 100%;
+    height: 540px;
+}
+
+#titulo-cb{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    margin-top: 190px;
+    font-size: 100px;
+    text-decoration: underline;
+}
+
+/*titulo dos serviços*/
+#titulo-serv{
+    color: #560F47;
+    display: flex;
+    justify-content: center;
+    margin-top: 260px;
+    font-size: 34px;
+}
+
+/*serviços*/
+.area-serv{
+    background-color: #fff;
+    border-radius: 100px 100px 0 0;
+    width: 100%;
+    height: 500px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#fundo-serv{
+    background-color: #fff;
+    box-shadow: 0 0 15px #9e9e9e;
+    border-radius: 40px;
+    width: 15%;
+    height: 320px;
+    margin: 30px;
+    margin-top: 90px;
+}
+
+#img-serv{
+    width: 200px;
+}
+
+#servs{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+#disc-serv{
+    font-size: 30px;
+    margin-top: 10px;
+    color: #560F47;
+}
+
+#agende{
+    margin-top: 20px;
+}
+
+/*botões serv*/
+.agt{
+    font-size: 20px;
+    border: none;
+    background-color: #FFC0CB;
+    color: #560F47;
+    border-radius: 100px;
+    width: 130px;
+    height: 50px;
+    transition: .2s;
+}
+
+.agt:hover{
+    background-color: var(--cor-hover)
+}
+.agt:active{
+    background-color: var(--cor-2);
+}
+
+@media (max-width: 1400px) {
+    #img-serv{
+        width: 150px;
+    }
+
+    #fundo-serv{
+        height: 300px;
+    }
+
+    #logo{
+        width: 20%;
+    }
+}
+
+@media (max-width: 1024px) {
+    #fundo-serv{
+        width: 200px;
+    }
+}
+
